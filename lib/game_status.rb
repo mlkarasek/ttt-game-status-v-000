@@ -9,7 +9,7 @@ def WIN_COMBINATIONS
 
   def won?(board)
 
-  win combinations.detect do |position|
+  WIN_COMBINATIONS.detect do |position|
     if board[position[0]] == "X" && board[position[1]] == "X" && board[position[2]] == "X"
       position
     elseif board[position[0]] == "0" && board[position[1]] == "O" && board[position[2]] == "O"
